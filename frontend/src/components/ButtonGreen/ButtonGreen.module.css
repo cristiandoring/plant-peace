@@ -1,0 +1,21 @@
+.button {
+  background-color: var(--emerald900);
+  border-radius: 8px;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 12px 40px;
+  width: fit-content;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--emerald700);
+  transition: 0.3s ease-in-out;
+}
+
+.text {
+  font-family: var(--font-inter);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+}

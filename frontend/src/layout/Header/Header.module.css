@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 16px 40px;
+  border-bottom: 1px solid var(--slate200);
+}
+
+.logo {
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.linksMenu > span {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--slate500);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.textRegister {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--slate900);
+}
