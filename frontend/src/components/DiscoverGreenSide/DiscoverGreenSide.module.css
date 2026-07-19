@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 90px);
+  justify-items: center;
+}
+
+.content {
+  max-width: 524px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title {
+  font-family: var(--font-playfair);
+  color: var(--emerald900);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  max-width: 473px;
+  width: 100%;
+}
+
+.description {
+  font-family: var(--font-inter);
+  color: var(--slate500);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 473px;
+  width: 100%;
+}

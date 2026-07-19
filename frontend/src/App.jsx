@@ -1,3 +1,4 @@
+import DiscoverGreenSide from './components/DiscoverGreenSide/DiscoverGreenSide'
 import Header from './layout/Header/Header'
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
       <Header/>
+      <DiscoverGreenSide/>
     </>
   )
 }
