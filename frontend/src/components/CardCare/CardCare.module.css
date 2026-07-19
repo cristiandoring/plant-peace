@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.box {
+  background-color: var(--emerald900);
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  line-height: auto;
+  font-weight: 700;
+  color: var(--slate950);
+  text-align: center;
+}
+
+.description {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--slate500);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}

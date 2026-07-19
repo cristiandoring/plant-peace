@@ -1,14 +1,11 @@
-import DiscoverGreenSide from './components/DiscoverGreenSide/DiscoverGreenSide'
-import Header from './layout/Header/Header'
+import Home from "./pages/Home";
 
 function App() {
-
   return (
     <>
-      <Header/>
-      <DiscoverGreenSide/>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
