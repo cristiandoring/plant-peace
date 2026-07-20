@@ -11,6 +11,7 @@
 
 .logo {
   transition: 0.3s ease-in-out;
+  flex-shrink: 0;
 }
 
 .logo:hover {

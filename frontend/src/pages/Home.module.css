@@ -1,15 +1,14 @@
-.stepsCare{
+.stepsCare {
   margin: 140px 0;
-
 }
-.contentTop{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 80px;
+.contentTop {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
 }
 .title {
   font-family: var(--font-fairplay);
@@ -30,12 +29,54 @@
   letter-spacing: 0.5%;
   max-width: 782px;
   width: 100%;
-
 }
 
-.steps{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.variantPlants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 140px;
+}
+
+.variantContentLeft {
+  display: flex;
+  gap: 40px;
+  max-width: 560px;
+  width: 100%;
+}
+
+
+.variantContentRight {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  gap: 40px;
+}
+
+.garden{
+  max-width: 560px;
+  width: 100%;
+}
+
+.boxDescription{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.descriptionVariant {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--slate500);
+  max-width: 560px;
+  width: 100%;
 }

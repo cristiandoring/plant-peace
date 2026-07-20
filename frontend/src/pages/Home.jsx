@@ -6,6 +6,10 @@ import Sun from "../assets/svg/Sun";
 import Fertilizant from "../assets/svg/Fertilizant";
 import styles from "./Home.module.css";
 import utils from "../styles/utils.module.css";
+import plantsLeft from "../assets/img/plantsLeft.png";
+import plantsRight from "../assets/img/plantsRight.png";
+import garden from "../assets/img/garden.png";
+import ButtonGreen from "../components/ButtonGreen/ButtonGreen";
 
 export default function Home() {
   return (
@@ -44,6 +48,38 @@ export default function Home() {
               title="Fertilização"
               description="Escolha um fertilizante adequado com base nas necessidades específicas das suas plantas, seja uma fórmula balanceada ou especializada"
             />
+          </div>
+        </section>
+
+        <section className={styles.variantPlants}>
+          <div className={styles.variantContentLeft}>
+            <img src={plantsLeft} alt="" />
+            <img src={plantsRight} alt="" />
+          </div>
+          <div className={styles.variantContentRight}>
+            <img src={garden} alt="" className={styles.garden} />
+            <div className={styles.boxDescription}>
+              <p className={styles.descriptionVariant}>
+                Nosso site oferece uma grande variedade de plantas
+                deslumbrantes, de flores vibrantes a folhagens exuberantes para
+                ambientes internos, permitindo que você crie seu próprio oásis
+                verde. Além da nossa ampla seleção de plantas, também
+                disponibilizamos kits de jardinagem e fertilizantes, fornecendo
+                tudo o que você precisa para cuidar bem das suas plantas e obter
+                sucesso no cultivo.
+              </p>
+              <p className={styles.descriptionVariant}>
+                Mas não paramos por aí! Acreditamos que o conhecimento é a chave
+                para um jardim próspero; por isso, oferecemos uma vasta gama de
+                informações e recursos sobre técnicas de jardinagem, dicas de
+                cuidados com as plantas e ideias de paisagismo. Seja você um
+                jardineiro experiente ou alguém que está apenas começando sua
+                jornada verde, nosso objetivo é inspirar e apoiar você em cada
+                etapa do caminho. Prepare-se para explorar nosso jardim virtual
+                e descobrir conosco o prazer de cultivar plantas!
+              </p>
+            </div>
+            <ButtonGreen text="Ver mais fotos" />
           </div>
         </section>
       </main>
