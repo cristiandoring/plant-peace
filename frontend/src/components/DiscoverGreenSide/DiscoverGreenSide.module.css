@@ -3,6 +3,10 @@
   grid-template-columns: 1fr 1fr;
   height: calc(100vh - 90px);
   justify-items: center;
+
+  @media (max-width: 981px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .content {
@@ -13,6 +17,9 @@
   gap: 24px;
   align-items: flex-start;
   justify-content: center;
+  @media (max-width: 981px) {
+    order: 2;
+  }
 }
 
 .title {
