@@ -10,12 +10,13 @@ import plantsLeft from "../assets/img/plantsLeft.png";
 import plantsRight from "../assets/img/plantsRight.png";
 import garden from "../assets/img/garden.png";
 import ButtonGreen from "../components/ButtonGreen/ButtonGreen";
+import Footer from "../layout/Footer/Footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
 
+      <Header />
       <main className={utils.container}>
         <DiscoverGreenSide />
 
@@ -83,6 +84,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer/>
     </>
   );
 }
