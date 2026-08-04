@@ -11,11 +11,14 @@ import plantsRight from "../assets/img/plantsRight.png";
 import garden from "../assets/img/garden.png";
 import ButtonGreen from "../components/ButtonGreen/ButtonGreen";
 import Footer from "../layout/Footer/Footer";
+import CardProduct from "../components/CardProduct/CardProduct";
+import plant from "../assets/img/plant.jpg";
+import ArrowLeft from '../assets/svg/ArrowLeft';
+import ArrowRight from '../assets/svg/ArrowRight';
 
 export default function Home() {
   return (
     <>
-
       <Header />
       <main className={utils.container}>
         <DiscoverGreenSide />
@@ -83,8 +86,27 @@ export default function Home() {
             <ButtonGreen text="Ver mais fotos" />
           </div>
         </section>
+
+        <section className={styles.carousel}>
+          <div className={styles.carouselContent}>
+            <div className={styles.carouselContentLeft}>
+              <h1 className={styles.carouselContentLeftTitle}>
+                Os mais populares e mais vendidos desta semana
+              </h1>
+              <p className={styles.carouselContentLeftDescription}>
+                Navegue pela nossa galeria para ver os produtos em destaque da
+                nossa loja.
+              </p>
+            </div>
+            <div className={styles.buttonsCarousel}>
+              <ArrowLeft />
+              <ArrowRight/>
+            </div>
+          </div>
+        </section>
+        <CardProduct urlImg={plant} name="Nome de teste" price="15.41" />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
