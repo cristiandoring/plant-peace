@@ -1,20 +1,18 @@
+import styles from "./Home.module.css";
 import DiscoverGreenSide from "../components/DiscoverGreenSide/DiscoverGreenSide";
 import Header from "../layout/Header/Header";
 import CardCare from "../components/CardCare/CardCare";
 import Water from "../assets/svg/Water";
 import Sun from "../assets/svg/Sun";
 import Fertilizant from "../assets/svg/Fertilizant";
-import styles from "./Home.module.css";
 import utils from "../styles/utils.module.css";
 import plantsLeft from "../assets/img/plantsLeft.png";
 import plantsRight from "../assets/img/plantsRight.png";
 import garden from "../assets/img/garden.png";
 import ButtonGreen from "../components/ButtonGreen/ButtonGreen";
 import Footer from "../layout/Footer/Footer";
-import CardProduct from "../components/CardProduct/CardProduct";
-import plant from "../assets/img/plant.jpg";
-import ArrowLeft from '../assets/svg/ArrowLeft';
-import ArrowRight from '../assets/svg/ArrowRight';
+import GaleryProducts from "../components/GaleryProducts/GaleryProducts";
+
 
 export default function Home() {
   return (
@@ -87,24 +85,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.carousel}>
-          <div className={styles.carouselContent}>
-            <div className={styles.carouselContentLeft}>
-              <h1 className={styles.carouselContentLeftTitle}>
-                Os mais populares e mais vendidos desta semana
-              </h1>
-              <p className={styles.carouselContentLeftDescription}>
-                Navegue pela nossa galeria para ver os produtos em destaque da
-                nossa loja.
-              </p>
-            </div>
-            <div className={styles.buttonsCarousel}>
-              <ArrowLeft />
-              <ArrowRight/>
-            </div>
-          </div>
-        </section>
-        <CardProduct urlImg={plant} name="Nome de teste" price="15.41" />
+        <GaleryProducts/>
       </main>
       <Footer />
     </>
